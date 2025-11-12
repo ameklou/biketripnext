@@ -1,5 +1,5 @@
-
-import React from 'react'
+"use client"
+import React, { useEffect, useState } from 'react'
 import { fileURLToPath } from 'url'
 
 import config from '@/payload.config'
@@ -8,25 +8,13 @@ import Hero from '@/components/hero'
 import UpcomingEvents from '@/components/upcoming-events'
 import Galleries from '@/components/galleries'
 import CustomTrip from '@/components/custom-trip'
+import Footer from '@/components/footer'
+import { Bike } from 'lucide-react'
+import { FAQSection } from '@/components/faq-section'
 
 
-export default async function HomePage() {
+export default function HomePage() {
 
-
-  // useEffect(() => {
-  //   const root = window.document.documentElement
-  //   root.classList.remove("light", "system")
-  //   root.classList.add("dark")
-  // }, [])
-  //
-  // useEffect(() => {
-  //   const handleScroll = () => {
-  //     setIsScrolled(window.scrollY > 100)
-  //   }
-  //
-  //   window.addEventListener("scroll", handleScroll)
-  //   return () => window.removeEventListener("scroll", handleScroll)
-  // }, [])
 
 
 
@@ -38,11 +26,13 @@ export default async function HomePage() {
           background: "radial-gradient(ellipse 50% 35% at 50% 0%, rgba(226, 232, 240, 0.12), transparent 60%), #000000",
         }}
       />
-      <Header/>
+     <Header/>
       <Hero/>
       <UpcomingEvents/>
       <Galleries/>
       <CustomTrip/>
+      <FAQSection/>
+      <Footer/>
 
     </div>
   )

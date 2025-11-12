@@ -2,6 +2,7 @@ import React from 'react'
 import './global.css'
 import { GeistSans } from "geist/font/sans"
 import { GeistMono } from "geist/font/mono"
+import Footer from '@/components/footer'
 
 export const metadata = {
   description: 'A blank template using Payload in a Next.js app.',
@@ -24,6 +25,7 @@ html {
     </head>
       <body className={"dark"}>
         <main>{children}</main>
+
       </body>
     </html>
   )
