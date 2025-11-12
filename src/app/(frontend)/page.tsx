@@ -7,6 +7,7 @@ import Header from '@/components/header'
 import Hero from '@/components/hero'
 import UpcomingEvents from '@/components/upcoming-events'
 import Galleries from '@/components/galleries'
+import CustomTrip from '@/components/custom-trip'
 
 
 export default async function HomePage() {
@@ -41,6 +42,7 @@ export default async function HomePage() {
       <Hero/>
       <UpcomingEvents/>
       <Galleries/>
+      <CustomTrip/>
 
     </div>
   )
