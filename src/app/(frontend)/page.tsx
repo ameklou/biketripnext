@@ -5,6 +5,7 @@ import { fileURLToPath } from 'url'
 import config from '@/payload.config'
 import Header from '@/components/header'
 import Hero from '@/components/hero'
+import UpcomingEvents from '@/components/upcoming-events'
 
 
 export default async function HomePage() {
@@ -37,6 +38,7 @@ export default async function HomePage() {
       />
       <Header/>
       <Hero/>
+      <UpcomingEvents/>
 
     </div>
   )
