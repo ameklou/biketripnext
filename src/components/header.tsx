@@ -1,6 +1,7 @@
 "use client"
 import React, { useEffect, useState } from 'react'
 import { Bike } from 'lucide-react'
+import Link from 'next/link'
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false)
@@ -64,63 +65,26 @@ const Header = () => {
         </a>
 
         <div className="absolute inset-0 hidden flex-1 flex-row items-center justify-center space-x-2 text-sm font-medium text-muted-foreground transition duration-200 hover:text-foreground md:flex md:space-x-2">
-          <a
+          <Link href={"/"}
             className="relative px-4 py-2 text-muted-foreground hover:text-foreground transition-colors cursor-pointer"
-            onClick={(e) => {
-              e.preventDefault()
-              const element = document.getElementById("features")
-              if (element) {
-                const headerOffset = 120 // Account for sticky header height + margin
-                const elementPosition = element.getBoundingClientRect().top + window.pageYOffset
-                const offsetPosition = elementPosition - headerOffset
 
-                window.scrollTo({
-                  top: offsetPosition,
-                  behavior: "smooth",
-                })
-              }
-            }}
           >
             <span className="relative z-20">Nos balades</span>
-          </a>
-          <a
+          </Link>
+          <Link
+            href={"#"}
             className="relative px-4 py-2 text-muted-foreground hover:text-foreground transition-colors cursor-pointer"
-            onClick={(e) => {
-              e.preventDefault()
-              const element = document.getElementById("pricing")
-              if (element) {
-                const headerOffset = 120 // Account for sticky header height + margin
-                const elementPosition = element.getBoundingClientRect().top + window.pageYOffset
-                const offsetPosition = elementPosition - headerOffset
 
-                window.scrollTo({
-                  top: offsetPosition,
-                  behavior: "smooth",
-                })
-              }
-            }}
           >
             <span className="relative z-20">Bike school</span>
-          </a>
-          <a
+          </Link>
+          <Link
+            href={"/lome-bike-tour"}
             className="relative px-4 py-2 text-muted-foreground hover:text-foreground transition-colors cursor-pointer"
-            onClick={(e) => {
-              e.preventDefault()
-              const element = document.getElementById("testimonials")
-              if (element) {
-                const headerOffset = 120 // Account for sticky header height + margin
-                const elementPosition = element.getBoundingClientRect().top + window.pageYOffset
-                const offsetPosition = elementPosition - headerOffset
 
-                window.scrollTo({
-                  top: offsetPosition,
-                  behavior: "smooth",
-                })
-              }
-            }}
           >
             <span className="relative z-20">Lomé bike tour</span>
-          </a>
+          </Link>
         </div>
 
         <div className="flex items-center gap-4">
