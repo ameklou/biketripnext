@@ -56,9 +56,6 @@ const Header = () => {
           className={`z-50 flex items-center justify-center gap-2 transition-all duration-300 ${
             isScrolled ? "ml-4" : ""
           }`}
-          href="/"
-          target="_blank"
-          rel="noopener noreferrer"
         >
           <Bike/>
           Biketrip
@@ -88,40 +85,23 @@ const Header = () => {
         </div>
 
         <div className="flex items-center gap-4">
-          <a
-            href="/login"
-            className="font-medium transition-colors hover:text-foreground text-muted-foreground text-sm cursor-pointer"
-          >
 
-          </a>
-
-          <a
-            href="/signup"
-            className="rounded-md font-bold relative cursor-pointer hover:-translate-y-0.5 transition duration-200 inline-block text-center bg-gradient-to-b from-green-700 to-green-700/80 text-primary-foreground shadow-[0px_2px_0px_0px_rgba(255,255,255,0.3)_inset] px-4 py-2 text-sm"
+          <Link
+            href="/lome-bike-tour/register"
+            className="rounded-2xl font-bold relative cursor-pointer hover:-translate-y-0.5 transition duration-200 inline-block text-center bg-gradient-to-b from-green-700 to-green-700/80 text-primary-foreground shadow-[0px_2px_0px_0px_rgba(255,255,255,0.3)_inset] px-4 py-2 text-sm"
           >
             Reservation
-          </a>
+          </Link>
         </div>
       </header>
       {/* Mobile Header */}
       <header className="sticky top-4 z-[9999] mx-4 flex w-auto flex-row items-center justify-between rounded-full bg-background/80 backdrop-blur-sm border border-border/50 shadow-lg md:hidden px-4 py-3">
-        <a
-          className="flex items-center justify-center gap-2"
-          href="https://v0.app"
-          target="_blank"
-          rel="noopener noreferrer"
+        <Link
+          href={"/"}
         >
-          <svg
-            fill="currentColor"
-            viewBox="0 0 147 70"
-            xmlns="http://www.w3.org/2000/svg"
-            aria-hidden="true"
-            className="text-foreground rounded-full size-7 w-7"
-          >
-            <path d="M56 50.2031V14H70V60.1562C70 65.5928 65.5928 70 60.1562 70C57.5605 70 54.9982 68.9992 53.1562 67.1573L0 14H19.7969L56 50.2031Z"></path>
-            <path d="M147 56H133V23.9531L100.953 56H133V70H96.6875C85.8144 70 77 61.1856 77 50.3125V14H91V46.1562L123.156 14H91V0H127.312C138.186 0 147 8.81439 147 19.6875V56Z"></path>
-          </svg>
-        </a>
+          <Bike/>
+          Biketrip
+        </Link>
 
         <button
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -172,12 +152,7 @@ const Header = () => {
                 FAQ
               </button>
               <div className="border-t border-border/50 pt-4 mt-4 flex flex-col space-y-3">
-                <a
-                  href="/login"
-                  className="px-4 py-3 text-lg font-medium text-muted-foreground hover:text-foreground transition-colors rounded-lg hover:bg-background/50 cursor-pointer"
-                >
-                  Log In
-                </a>
+
                 <a
                   href="/signup"
                   className="px-4 py-3 text-lg font-bold text-center bg-gradient-to-b from-primary to-primary/80 text-primary-foreground rounded-lg shadow-lg hover:-translate-y-0.5 transition-all duration-200"

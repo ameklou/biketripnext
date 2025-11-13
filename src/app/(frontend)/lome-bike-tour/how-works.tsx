@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 
 const HowWorks = () => {
   return (
@@ -59,7 +60,8 @@ const HowWorks = () => {
           </div>
         </div>
         <div className="w-full flex justify-center items-center">
-          <button
+          <Link
+            href="/lome-bike-tour/register"
             data-tally-open="w8j1kA"
             data-tally-layout="modal"
             data-tally-hide-title="1"
@@ -89,7 +91,7 @@ const HowWorks = () => {
               </div>
             </div>
             <div className="group-hover:left-[2px] group-hover:top-[2px] absolute h-full w-full left-1 top-1 transition-all duration-200 ease-in-out rounded-md bg-green-900"></div>
-          </button>
+          </Link>
         </div>
       </div>
     </section>
