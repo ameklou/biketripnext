@@ -28,13 +28,8 @@ const Page = () => {
       <AnimatedSection className="relative z-10 max-w-[1320px] mx-auto px-6 mt-30" delay={0.1}>
         <SocialProof />
       </AnimatedSection>
-      <Registration/>
       <HowWorks/>
-      <LBTHero/>
       <TestimonialsSection/>
-
-
-
 
       <Footer/>
 

@@ -56,7 +56,7 @@ export function TestimonialsSection() {
   }, [])
 
   return (
-    <section className="py-20 px-4 sm:px-6 lg:px-8 bg-muted/30 overflow-hidden">
+    <section className="py-20 px-4 sm:px-6 lg:px-8 bg-muted/30 overflow-hidden mb-120">
       <div className="w-full">
 
 
