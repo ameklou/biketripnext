@@ -1,5 +1,14 @@
 import React from 'react'
 import Header from '@/components/header'
+import LBTHero from '@/app/(frontend)/lome-bike-tour/lbt-hero'
+import { TestimonialsSection } from '@/app/(frontend)/lome-bike-tour/photos'
+import HowWorks from '@/app/(frontend)/lome-bike-tour/how-works'
+import Footer from '@/components/footer'
+import { AnimatedSection } from '@/components/animated-section'
+import { SocialProof } from '@/components/social-proof'
+import SomeHero from '@/components/SomeHero'
+import LbtRegistrationForm from '@/app/(frontend)/lome-bike-tour/lbt-registration-form'
+import Registration from '@/app/(frontend)/lome-bike-tour/Registration'
 
 const Page = () => {
 
@@ -12,6 +21,22 @@ const Page = () => {
         }}
       />
       <Header/>
+      <SomeHero title={"Lome Bike tour 3"} description={"Faire le tour de lome à velo"} imageSrc={"/bike-ride.svg"}/>
+
+
+
+      <AnimatedSection className="relative z-10 max-w-[1320px] mx-auto px-6 mt-30" delay={0.1}>
+        <SocialProof />
+      </AnimatedSection>
+      <Registration/>
+      <HowWorks/>
+      <LBTHero/>
+      <TestimonialsSection/>
+
+
+
+
+      <Footer/>
 
     </div>
   )

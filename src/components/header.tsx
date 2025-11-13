@@ -56,7 +56,7 @@ const Header = () => {
           className={`z-50 flex items-center justify-center gap-2 transition-all duration-300 ${
             isScrolled ? "ml-4" : ""
           }`}
-          href="https://v0.app"
+          href="/"
           target="_blank"
           rel="noopener noreferrer"
         >

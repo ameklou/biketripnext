@@ -19,7 +19,7 @@ export default function HomePage() {
 
 
   return (
-    <div className="min-h-screen w-full relative bg-black">
+    <div className="min-h-screen w-full relative bg-white">
       <div
         className="absolute inset-0 z-0"
         style={{
